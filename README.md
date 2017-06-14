@@ -19,4 +19,15 @@ original when I went to the torch folder, there is no "install" folder. In order
 
  Problem solved.  
  
+ #  Run deepmask  
  
+ error:
+ 
+ /home/ec2-user/torch/install/bin/luajit: /home/ec2-user/torch/install/share/lua/5.1/trepl/init.lua:389: /home/ec2-user/torch/install/share/lua/5.1/trepl/init.lua:389: /home/ec2-user/torch/install/share/lua/5.1/cudnn/ffi.lua:1603: 'libcudnn (R5) not found in library path.
+
+ 
+ solution:  
+  export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+
+
+
