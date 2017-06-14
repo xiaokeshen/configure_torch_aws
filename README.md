@@ -31,3 +31,21 @@ original when I went to the torch folder, there is no "install" folder. In order
 
 
 
+error:  
+
+/home/ec2-user/torch/install/bin/luajit: cannot open </pretrained/deepmask/model.t7> in mode r  at /home/ec2-user/torch/pkg/torch/lib/TH/THDiskFile.c:670
+stack traceback:
+        [C]: at 0x7fd6ce4b32c0
+        [C]: in function 'DiskFile'
+        /home/ec2-user/torch/install/share/lua/5.1/torch/File.lua:405: in function 'load'
+        computeProposals.lua:49: in main chunk
+        [C]: in function 'dofile'
+        ...user/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:151: in main chunk
+        [C]: at 0x004064c0
+
+
+
+solution:
+luarocks install json
+
+json is not installed so I got the error.
